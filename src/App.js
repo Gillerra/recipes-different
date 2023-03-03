@@ -23,7 +23,6 @@ function App() {
 
 
   const myRecipeSearch = (e) => {
-    console.log(e.target.value)
     setMySearch(e.target.value)
   }
 
