@@ -16,7 +16,6 @@ function App() {
     const getApi = async () => {
     const response = await fetch(`https://api.edamam.com/search?q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
     const data = await response.json();
-    console.log(data.hits);
     setMyRecipes(data.hits);
   }
     getApi();
